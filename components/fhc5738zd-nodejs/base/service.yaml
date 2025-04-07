@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: fhc5738zd-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: fhc5738zd-nodejs 
+  name: fhc5738zd-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: fhc5738zd-nodejs 
